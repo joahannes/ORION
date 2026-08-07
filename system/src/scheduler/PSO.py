@@ -35,7 +35,7 @@ def run(queue, clouds, tasks):
             id_nuvem = sorted_clouds[cloud]
             result[id_nuvem] = {}
 
-            cloud_capacity = sorted_clouds[cloud]
+            cloud_capacity = local_clouds[id_nuvem]
             local_result = {}
 
             min_task_size = min(local_tasks, key=local_tasks.get)
