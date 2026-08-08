@@ -263,17 +263,15 @@ Os resultados obtidos são os seguintes:
 # Citação
 
 ```bibtex
-@inproceedings{orion2026sbrc,
-    author = {Esteves, Matheus R and Kimura, Bruno and Leone, Maycon and Rocha Filho, Geral P and Villas, Leandro A and {de Souza}, Allan M and {da Costa}, Joahannes B D},
-    title = {ORION: Escalonamento de Tarefas baseado em Otimização Multiobjetivo para Nuvens Veiculares},
+@inproceedings{esteves2026orion,
+    title = {{ORION: Escalonamento de Tarefas baseado em Otimização Multiobjetivo para Nuvens Veiculares}},
+    author = {Esteves, Matheus R and Kimura, Bruno and Peixoto, Maycon and Rocha, Geraldo and Villas, Leandro and {de Souza}, Allan M and {da Costa}, Joahannes B D},
     booktitle = {XLIV Simp{\'o}sio Brasileiro de Redes de Computadores e Sistemas Distribu{\'\i}dos (SBRC)},
     location = {Praia do Forte/BA},
     year = {2026},
     issn = {2177-9384},
     pages = {1094--1107},
-    organization = {SBC},
-    address = {Porto Alegre, RS, Brasil},
-    doi = {10.5753/sbrc.2026.19311}
+    organization = {SBC}
 }
 ```
 
