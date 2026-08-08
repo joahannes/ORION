@@ -129,7 +129,6 @@ def process_tasks(sorted_clouds, tasks_k, tasks, clouds, queue, index):
 			id_nuvem, atualiza_valor = select_item_with_rejection(items, probabilities)
 			clouds.probabilities[id_nuvem] = atualiza_valor
 			# id_nuvem = sorted_clouds[cloud]
-			result[id_nuvem] = {}
 
 			cloud_capacity = local_clouds[id_nuvem]
 			local_result = {}
@@ -162,6 +161,8 @@ def process_tasks(sorted_clouds, tasks_k, tasks, clouds, queue, index):
 			local_result = bincovering.first_fit_decreasing_algorithm(local_pareto_to_bcp, local_tasks_deadline, local_clouds[id_nuvem])
 				
 			if len(local_result) > 0:
+
+				result[id_nuvem] = {}
 
 				# print("LOCAL RESULT")
 				# print(local_result)

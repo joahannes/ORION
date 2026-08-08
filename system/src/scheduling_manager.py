@@ -218,7 +218,8 @@ class SchedulingManager:
 				cloud_cpu_load += self.task_size
 
 			# ATUALIZA INFORMACOES DA NUVEM
-			clouds.update(cloud, self.resource_usage[cloud], 'add')
+			# Atualiza o uso de recursos da nuvem com base na carga de CPU calculada na rodada atual
+			clouds.update(cloud, self.resource_now[cloud], 'add')
 
 	def update_vc_resources(self):
 		"""

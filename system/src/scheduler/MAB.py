@@ -40,7 +40,6 @@ def run(queue, clouds, tasks):
 		if len(local_tasks) > 0:
 
 			id_nuvem = sorted_clouds[cloud]
-			result[id_nuvem] = {}
 
 			# print("Nuvem:",id_nuvem)
 
@@ -61,11 +60,12 @@ def run(queue, clouds, tasks):
 				if local_tasks[task] <= cloud_capacity:
 					local_result[task] = -1
 					cloud_capacity -= local_tasks[task]
-					break
 				else:
 					break
 			
 			if len(local_result) > 0:
+
+				result[id_nuvem] = {}
 
 				# VERIFICA PROCESSAMENTO E ADICIONA ESTIMATIVA NA TAREFA
 				processing = management.get_processing_time(local_clouds[id_nuvem], tasks, local_result)
